@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+    <title>recepten</title>
     <!-- reset jouw css -->
     <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -14,7 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet">
-  </head>
+  <script src="./js/script-clients.js" defer></script>
+</head>
 
 <body class="p-3 m-0 border-0 bd-example">
   <nav class="navbar navbar-expand-md bg-light">
@@ -28,19 +29,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="recepten.html">recepten</a>
+            <a class="nav-link" href="recepten.html">recepten</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               shop
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/shop.html">shop</a></li>
+              <li><a class="dropdown-item" href="shop.html">shop</a></li>
               <li><a class="dropdown-item" href="checkut.html">checkut</a></li>
-              <li><a class="dropdown-item" href="/klanten.html">Klanten</a></li>
+              <li><a class="dropdown-item" href="klanten.html">klanten</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -62,60 +63,27 @@
 <div class="container">
   <div class="row">
     <main class="col-md-9 pe-3">
-      <section id="shopintro" class="row">
-        <article class="col-md-6">
-            <h2 class="text-uppercase fs-4 fw-bolder pt-3">KOFFIEBONEN</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, distinctio dolorum. Saepe tenetur sit repudiandae iure corporis non obcaecati excepturi incidunt possimus magni aperiam, repellendus, eos porro facere assumenda eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nulla aut quaerat sint molestiae minima reiciendis magni, vel tempora, voluptatum modi delectus inventore esse repellendus hic consectetur repellat amet ex dignissimos?</p>
-        </article>
-        <article class="col-md-6">
-            <h2 class="text-uppercase fs-4 fw-bolder pt-3">KOFFIEMOLENS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestias, quia tempora optio vel corrupti veniam sint debitis quod accusamus expedita aliquid delectus atque. Harum fuga vel perferendis sapiente earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates deserunt sapiente nihil numquam quaerat quisquam, reiciendis esse facilis laudantium quis mollitia in delectus expedita voluptatem.</p>
+      <section class="row">
+        <article class="col-12 mb-3">
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Klanten</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quidem consequatur officiis labore
+            ex, expedita omnis architecto dolore ratione aliquid. Expedita libero est tempore esse distinctio?
+            Autem voluptas exercitationem eius quas harum magni obcaecati nemo cum voluptatum voluptatem maiores
+            quibusdam voluptates laudantium perspiciatis minima labore quod, id itaque iure nostrum.</p>
         </article>
         <hr>
-      
-      </section>
-      <section id="koffieCarousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#koffieCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-          <li data-bs-target="#koffieCarousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
-          <li data-bs-target="#koffieCarousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
-        </ol>
-        <section class="carousel-inner">
-          <figure class="carousel-item active">
-            <img src="/assets/pexels-6-tom-swinnen.jpg" class="d-block w-100" alt="Image One">
-            <figcaption class="carousel-caption d-none d-md-block">
-              <h5>De ouderwetse manier</h5>
-              <p>The old fashion way...© Tom Swinnen</p>
-            </figcaption>
-          </figure>
-          <figure class="carousel-item">
-            <img src="/assets/pexels-5-wouter-de-jong.jpg" class="d-block w-100" alt="Image Two">
-            <figcaption class="carousel-caption d-none d-md-block">
-              <h5>KOFFIEMOLENS</h5>
-              <p>© Wouter de Jong</p>
-            </figcaption>
-          </figure>
-          <figure class="carousel-item">
-            <img src="/assets/pexels-4-juan-pablo-serrano-arenas.jpg" class="d-block w-100" alt="Image Three">
-            <figcaption class="carousel-caption d-none d-md-block">
-              <h5>Titel Drie</h5>
-              <p>© Juan Pablo Serrano Arenas</p>
-            </figcaption>
-          </figure>
+
+        <section id="clients"  class="row">
+          <!-- JavaScript laadt recepten in met een API, in een Bootstrap-accordion-->
         </section>
-        <button class="carousel-control-prev" type="button" data-bs-target="#koffieCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#koffieCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        
+        <hr class="mb-3 p-3">
+    
       </section>
       <hr>
     </main>
 
-    <aside class="col-md-3 border-start ps-5">
+    <aside class="col-md-3 border-start ps-5"">
       <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
       <p>COFFEE shop<br>
         email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
@@ -147,8 +115,7 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center h6 small p-4">&copy; 2023 koffie enzo</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
 </body>
 
 </html>
