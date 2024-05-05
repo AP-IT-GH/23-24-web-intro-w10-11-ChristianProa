@@ -58,117 +58,141 @@
       <h1 class="col display-2 koffiebruin text-center">may the coffee<br>be with you</h1>
     </header>
 
-    <div class="container">
-      <div class="row">
-        <main class="col-md-9 pe-3">
-          <section id="checkout" class="row">
-            <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3">Facturatie adres</h4>
-              <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                  <div class="col-sm-6">
-                    <label for="firstName" class="form-label">Voornaam</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                    <div class="invalid-feedback">
-                      Voornaam is vereist.
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Achternaam</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                    <div class="invalid-feedback">
-                      Achternaam is vereist.
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label for="email" class="form-label">E-mail <span class="text-body-secondary">(Optioneel)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    <div class="invalid-feedback">
-                      Voer een geldig e-mailadres in voor verzendupdates.
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label for="address" class="form-label">Adres</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                    <div class="invalid-feedback">
-                      Voer uw verzendadres in.
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <label for="country" class="form-label">Land</label>
-                    <select class="form-select" id="country" required>
-                      <option value="">Kies...</option>
-                      <option>België</option>
-                      <option>Nederland</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Kies een geldig land.
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <label for="zip" class="form-label">Postcode</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Postcode is vereist.
-                    </div>
-                  </div>
-                </div>
-                <hr class="my-4">
-                <h4 class="mb-3">Betaling</h4>
-                <div class="my-3">
-                  <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                    <label class="form-check-label" for="credit">Creditcard</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="debit">Debitkaart</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="paypal">PayPal</label>
-                  </div>
-                </div>
-                <hr class="my-4">
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Verder naar betalen</button>
-              </form>
-            </div>
-          </section>
-        </main>
-
-        <aside class="col-md-3 border-start ps-5">
-          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Your Cart</h2>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Productnaam</h6>
-                <small class="text-body-secondary">Korte beschrijving</small>
-              </div>
-              <span class="text-body-secondary">€12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Tweede product</h6>
-                <small class="text-body-secondary">Korte beschrijving</small>
-              </div>
-              <span class="text-body-secondary">€8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Derde item</h6>
-                <small class="text-body-secondary">Korte beschrijving</small>
-              </div>
-              <span class="text-body-secondary">€5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Totaal (EUR)</span>
-              <strong>€25</strong>
-            </li>
-          </ul>
+    <article class="col-md-9 pe-3" id="checkout">
+      <h2 class="text-uppercase fs-4 fw-bolder pt-3">shop</h2>
+      <p>Stap binnen in onze online koffie-oase, waar elke boon een verhaal vertelt en elke slok een reis is door smaakvolle aroma's. Ontdek een uitgelezen selectie van zorgvuldig geselecteerde koffiebonen van over de hele wereld, gebrand om de meest verfijnde smaakprofielen te onthullen. Of je nu een doorgewinterde koffiekenner bent of net begint aan je koffieavontuur, wij bieden een scala aan producten en accessoires om je te begeleiden op jouw reis naar de perfecte kop koffie. Dompel jezelf onder in onze wereld van heerlijke geuren, rijke smaken en ongeëvenaarde kwaliteit - welkom bij de ultieme bestemming voor koffieliefhebbers.</p>
+    </article>
+    <hr>
+    <main class="container">
+      <section id="checkout" class="">
+        <article class="row g-5">
+          <aside class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Winkelmankje</span>
+              <span class="badge bg-primary rounded-pill">4</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <article>
+                  <h6 class="my-0">Product 1</h6>
+                  <small>omschrijving</small>
+                </article>
+                <span>€12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <article>
+                  <h6 class="my-0">Product 2</h6>
+                  <small>omschrijving</small>
+                </article>
+                <span>€8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <article>
+                  <h6 class="my-0">Product 3</h6>
+                  <small>omschrijving</small>
+                </article>
+                <span>€5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <article>
+                  <h6 class="my-0">Kortingscode</h6>
+                  <small>AP-CODE</small>
+                </article>
+                <span class="text-success">−€5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (EUR)</span>
+                <strong>€20</strong>
+              </li>
+            </ul>
         </aside>
+        
+    
+        <section class="col-md-7 col-lg-8">
+          <h4>Adresgegevens</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <section class="col-sm-6">
+                <label for="firstName" class="form-label">Voornaam</label>
+                <input type="text" class="form-control" id="firstName" required>
+                <div class="invalid-feedback">Voornaam is vereist.</div>
+              </section>
+              <section class="col-sm-6">
+                <label for="lastName" class="form-label">Achternaam</label>
+                <input type="text" class="form-control" id="lastName" required>
+                <div class="invalid-feedback">Achternaam is vereist.</div>
+              </section>
+              <section class="col-12">
+                <label for="username" class="form-label">@ Gebruikersnaam</label>
+                <input type="text" class="form-control" id="username" placeholder="gebruikersnaam" required>
+                <div class="invalid-feedback">Gebruikersnaam is vereist.</div>
+              </section>
+              <section class="col-12">
+                <label for="email" class="form-label">E-mail (optioneel)</label>
+                <input type="email" class="form-control" id="email" placeholder="jouw@mailadres.com">
+              </section>
+              <section class="col-12">
+                <label for="address" class="form-label">Adres</label>
+                <input type="text" class="form-control" id="address" placeholder="Ellermanstraat 33" required>
+                <div class="invalid-feedback">Adres is vereist.</div>
+              </section>
+              <section class="col-12">
+                <label for="address2" class="form-label">Adres 2 (optioneel)</label>
+                <input type="text" class="form-control" id="address2" placeholder="Appartement of suite">
+              </section>
+              <section class="col-md-4">
+                <label for="country" class="form-label">Land</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Selecteer...</option>
+                  <option>België</option>
+                  <option>Nederland</option>
+                  <option>Luxemburg</option>
+                </select>
+                <div class="invalid-feedback">Selecteer een geldig land.</div>
+              </section>
+              <section class="col-md-4">
+                <label for="state" class="form-label">Provincie</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Selecteer...</option>
+                  <option>Antwerpen</option>
+                  <option>Limburg</option>
+                  <option>Namen</option>
+                  <option>Luik</option>
+                </select>
+                <div class="invalid-feedback">Selecteer een geldige provincie.</div>
+              </section>
+              <section class="col-md-4">
+                <label for="zip" class="form-label">Postcode</label>
+                <input type="text" class="form-control" id="zip" required>
+                <div class="invalid-feedback">Postcode is vereist.</div>
+              </section>
+            </div>
+            <section class="my-4">
+              <h4>Betaalwijze</h4>
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Kredietkaart</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Debetkaart</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </section>
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Verder naar betalen</button>
+          </form>
+        </section>
+        
+    </main>
+    
 
-      </div>
-    </div>
+
+
+
+    
 
     <footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
   </body>
